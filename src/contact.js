@@ -2,10 +2,6 @@ const contact = () => {
 
     const main = document.getElementById('main');
 
-    // Clear current content
-    var container = document.getElementById('container');
-    main.removeChild(container);
-
     // contact Page Content
     const content = document.createElement('div');
     content.setAttribute('class', 'container');

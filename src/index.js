@@ -12,6 +12,12 @@ let homeTab = document.getElementById('home');
 let menuTab = document.getElementById('menu');
 let contactTab = document.getElementById('contact');
 
-homeTab.addEventListener('click', () => { home(); });
-menuTab.addEventListener('click', () => { menu(); });
-contactTab.addEventListener('click', () => { contact(); });
+homeTab.addEventListener('click', () => { clear(); home(); });
+menuTab.addEventListener('click', () => { clear(); menu(); });
+contactTab.addEventListener('click', () => { clear(); contact(); });
+
+const clear = function() {
+    // Clear current content
+    var container = document.getElementById('container');
+    while (container) { main.removeChild(container); container = document.getElementById('container'); }
+}

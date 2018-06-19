@@ -2,11 +2,6 @@ const home = () => {
 
     var main = document.getElementById('main');
     
-
-    // Clear current content
-    var container = document.getElementById('container');
-    while (container) { main.removeChild(container); container = document.getElementById('container'); }
-
     // Home Page Content
     const content = document.createElement('div');
     content.setAttribute('class', 'container');
