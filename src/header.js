@@ -9,30 +9,27 @@ const loadHeader = () => {
     [1,2,3].forEach(function(i) {
         const li = document.createElement('li');
         li.setAttribute('class', 'nav-item');
-        ul.appendChild(li);
-    })
-    
-    ul.childNodes.forEach(function(e, i) {
         const a = document.createElement('a');
         a.setAttribute('class', 'nav-link');
         a.setAttribute('href', '#');
         switch(i){
-            case 0:
+            case 1:
                 a.setAttribute('id', 'home');
                 a.innerHTML = 'Home';
                 break;
-            case 1:
+            case 2:
                 a.setAttribute('id', 'menu');
                 a.innerHTML = 'Menu';
                 break;
-            case 2:
+            case 3:
                 a.setAttribute('id', 'contact');
                 a.innerHTML = 'Contact';
                 break;
             default:
                 break;
         }
-        e.appendChild(a);
+        li.appendChild(a);
+        ul.appendChild(li);
     })
     
     nav.appendChild(ul);
