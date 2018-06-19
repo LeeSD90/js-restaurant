@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(51, 48, 47) !important;
+}
+
+nav {
+    background-color: black;
+    height: 80px;
+}
+
+nav a, nav a:hover {
+    color: white;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+#banner {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    background-position-y: 60%;
+    background-image: url("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#banner h1 {
+    position: absolute;
+    display: table-cell;
+    left: 50px;
+    vertical-align: top;
+    color: rgb(255, 255, 255);
+    font-size: 10rem;
+    font-weight: 100;
+    font-family: 'Spirax', cursive;
+}
+
+.container {
+    padding: 50px;
+    color: white;
+}
